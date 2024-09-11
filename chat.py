@@ -13,7 +13,6 @@ def initialize_index():
     """
     Initializes and returns an index by loading it from storage.
     """
-
     try:
         storage_context = StorageContext.from_defaults(persist_dir=INDEX_STORAGE_PATH) # ./storage
         index = load_index_from_storage(storage_context)
